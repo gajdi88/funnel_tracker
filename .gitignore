@@ -1,0 +1,9 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+.idea
+Lib
+Scripts
+password.txt
+~*.xlsx
+*.xlsx
