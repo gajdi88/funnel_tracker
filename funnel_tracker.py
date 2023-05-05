@@ -8,11 +8,14 @@ import os
 old_data = None
 
 def is_equal(a,b):
-    if a == b:
-        return True
-    if math.isnan(a) and math.isnan(b):
-        return True
-    return False
+    try:
+        if a == b:
+            return True
+        if math.isnan(a) and math.isnan(b):
+            return True
+        return False
+    except:
+        return False
 
 def compare_dataframes(old_data, new_data):
     changes = []
